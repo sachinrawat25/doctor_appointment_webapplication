@@ -1,0 +1,322 @@
+/* Global Styles */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #3498db;
+  --accent-color: #e74c3c;
+  --background-color: #f5f6fa;
+  --text-color: #2c3e50;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Form Styles */
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+}
+
+.register-form {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 450px;
+}
+
+.register-form h3 {
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.ant-form-item-label > label {
+  color: var(--primary-color) !important;
+  font-weight: 500;
+}
+
+.ant-input {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.ant-input:hover, .ant-input:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.btn-primary {
+  background: var(--secondary-color) !important;
+  border: none !important;
+  padding: 12px 30px !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease !important;
+}
+
+.btn-primary:hover {
+  background: #2980b9 !important;
+  transform: translateY(-2px);
+}
+
+/* Layout Styles */
+.main {
+  padding: 20px;
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+.layout {
+  display: flex;
+  gap: 24px;
+}
+
+.sidebar {
+  min-height: 100vh;
+  width: 280px;
+  background: linear-gradient(180deg, var(--primary-color), #34495e);
+  border-radius: 12px;
+  padding: 20px;
+  color: white;
+  box-shadow: var(--shadow);
+}
+
+.logo h6 {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0;
+  letter-spacing: 1px;
+}
+
+.menu-item {
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin: 8px 0;
+  transition: all 0.3s ease;
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menu-item.active {
+  background: white;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu-item.active a {
+  color: var(--primary-color);
+}
+
+.menu-item i {
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.content {
+  flex: 1;
+}
+
+.header {
+  background: white;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-bottom: 24px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.header-content i {
+  font-size: 20px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.header-content a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.body {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  min-height: calc(100vh - 160px);
+}
+
+/* Card Styles */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  margin: 20px 0;
+  background: white;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background: var(--primary-color);
+  color: white;
+  border-radius: 12px 12px 0 0 !important;
+  padding: 16px;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Booking Page Styles */
+.booking-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+.booking-title {
+  color: var(--primary-color);
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.doctor-info {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.doctor-info h4 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.booking-form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.ant-picker {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 15px;
+}
+
+.ant-picker:hover,
+.ant-picker:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.booking-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.booking-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-check-availability {
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+}
+
+.btn-check-availability:hover {
+  background: #2980b9;
+}
+
+.btn-book-now {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+}
+
+.btn-book-now:hover {
+  background: #234567;
+}
+
+/* Table Styles */
+.ant-table {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.ant-table-thead > tr > th {
+  background: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .header-content {
+    justify-content: space-between;
+  }
+}
